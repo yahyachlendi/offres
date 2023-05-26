@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c7690;
+    color:white;
+    padding:10px;
+}
+.button {
+    padding: 10px;
+    text-align: center;
+    background-color: #258fac;
+    border-color: #258fac;
+    border-radius: 10px;
+}
+.profile-actions{
+    display:inline-block;
+    gap:20px;
+}
+.navigation{
+    display: flex;
+    gap:16px;
+}
+.link{
+    color:white;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #258fac;
+    border-radius: 5px;
+}
+
+.link:hover{
+    background-color: #1c5f71;
+}
+
+.link:active{
+    background-color: #cadce0;
+}
+filter{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.search-container{
+    border-color: aquamarine;
+    color: aqua;
+}
+
+.offres-container{
+    display:flex;
+    gap: 2rem;
+    padding: 4rem;
+
+}
+.offre-container{
+    max-width: 50rem;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFF;
+    box-shadow: -1px 5px 15px  #5050502b;
+}
+
+.offre-image > img{
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.offre-details-item {
+    display: flex;
+    justify-content: start;
+    gap: 0.6rem;
+}
+
+.offre-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+}
+
+.offre-actions > button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 0.4rem;
+    font-weight: 600;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: rgb(95, 67, 67);
+    float: left;
+    padding: 6px 16px;
+    text-decoration: dashed;
+  }

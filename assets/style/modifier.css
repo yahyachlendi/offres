@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c7690;
+    color:white;
+    padding:10px;
+}
+.button {
+    padding: 10px;
+    text-align: center;
+    background-color: #258fac;
+    border-color: #258fac;
+    border-radius: 10px;
+}
+.profile-actions{
+    display:inline-block;
+    gap:20px;
+}
+.navigation{
+    display: flex;
+    gap:16px;
+}
+.link{
+    color:white;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #258fac;
+    border-radius: 5px;
+}
+
+.link:hover{
+    background-color: #1c5f71;
+}
+
+.link:active{
+    background-color: #cadce0;
+}
+filter{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.search-container{
+    border-color: aquamarine;
+    color: aqua;
+}
