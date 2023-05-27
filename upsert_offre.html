@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceuil</title>
+  <link href="./assets/style/bootstrap.min.css.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="./assets/script/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+  <header class="p-3 mb-3 border-bottom bg-light">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="home.html" class="nav-link px-2 link-secondary">Acceuil</a></li>
+          <li><a href="offres.html" class="nav-link px-2 link-dark">Offres disponible</a></li>
+          <li><a href="favoris.html" class="nav-link px-2 link-dark">Favoris</a></li>
+          <li><a href="my_offres.html" class="nav-link px-2 link-dark">Mes offres</a></li>
+        </ul>
+
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" >
+            <li><a class="dropdown-item" href="upsert_offre.html">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content mt-5">
+      <div class="ms-5 mb-3 d-flex justify-content-between">
+        <h1>Ajouter/modifier offre</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 d-flex justify-content-center">
+        <form>
+          <div class="mb-3">
+            <label for="titrel" class="form-label">Titre</label>
+            <input type="text" name="title" class="form-control" id="titrel" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input type="file" name="image" class="form-control" id="image" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="phone_number" class="form-label">Numéro de téléphone</label>
+            <input type="tel" name="phone_number" class="form-control" id="phone_number" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="places_dispo" class="form-label">Places disponible</label>
+            <input type="number" min="1" name="places_dispo" class="form-control" id="places_dispo" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="addresse" class="form-label">Addresse</label>
+            <input type="text" name="addresse" class="form-control" id="addresse" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea type="text" name="description" class="form-control" id="description" aria-describedby="emailHelp"></textarea>
+          </div>
+
+          
+          <button type="submit" class="btn btn-primary float-end">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          Offrini
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Offrini, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

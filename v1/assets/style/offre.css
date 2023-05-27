@@ -30,6 +30,7 @@ header {
     color:white;
     text-decoration: none;
     padding: 8px;
+    align-items: center;
     background-color: #258fac;
     border-radius: 5px;
 }

@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se connecter</title>
-    <link rel="stylesheet" href="./assets/style/login.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <style>
-    body {
-        font-family: 'Roboto';
-    }
-    </style>
+    <link href="./assets/style/bootstrap.min.css.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="./assets/script/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <link href="./assets/style/login.css" rel="stylesheet">
 </head>
 
-<body>
-    <form method="post" action="">
-        <div class="login">
-            <h1 class="login-title">Se connecter</h1>
-            <div class="input-control">
-                <label class="required" for="name">Nom d'utilisateur</label>
-                <input type="text" id="name" placeholder="Entrer votre nom d'utilisateur" name="uname" required="">
+<body class="text-center">
+
+    <main class="form-signin">
+        <form>
+            <h1>Offrini</h1>
+            <h1 class="h3 mb-3 fw-normal">Merci de vous connecter</h1>
+
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="username" placeholder="name@example.com">
+                <label for="username">Nom d'utilisateur</label>
             </div>
-            <div class="input-control">
-                <label class="required" for="password">Mot de passe </label>
-                <input type="password" id="password" placeholder="Entrer votre mot de passe" name="psw" required="">
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                <label for="password">Mot de passe</label>
             </div>
-            <div class="dont-have-account">Vous n'avez pas de compte ? <a href='signup.html'>S'inscrire</a></div>
-            <button type="submit" class="login-button">Se connecter</button>
-        </div>
-    </form>
+
+            Vous n'avez pas de compte ? <a href="/register.html">S'inscrire</a>
+        
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Se connecter</button>
+            <p class="mt-5 mb-3 text-muted">© 2023</p>
+        </form>
+    </main>
 </body>
+
 </html>
